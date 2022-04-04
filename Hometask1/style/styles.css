@@ -119,7 +119,10 @@ footer {
 
 @media screen and (max-width:1240px){
   .title-Bar{
-    display:block;
+    flex-direction: column;
+  }
+  .heading{
+    order:3;
   }
   .title-Bar div{
     width:100%;
