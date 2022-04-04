@@ -11,11 +11,11 @@
   background-color: rgb(39,56,82);
 }
 
-.titlebar button, .contentBox button, footer {
+.title-Bar button, .feed-Area button, footer {
   color:#fff;
 }
 
-.headerDiv, .contentBox h2 {
+.text-header, .feed-Area h2 {
   color:rgb(39,56,82);
 }
 
@@ -25,7 +25,7 @@ header {
   padding:10px;
 }
 
-.headerDiv {
+.text-header {
   border: 2px solid rgb(208,93,73) ;
   background-color: white;
   width:12vw;
@@ -43,7 +43,7 @@ h6 {
   margin-bottom: 0;
 }
 
-.titlebar {
+.title-Bar {
   display:flex;
   justify-content: space-between;
   padding-bottom:20px;
@@ -52,21 +52,21 @@ h6 {
   font-weight: bold;
 }
 
-.titlebar div {
+.title-Bar div {
   width:20%;
 }
 
-.titlebar select {
+.title-Bar select {
   width:80%;
 }
 
-.titlebar select,input,button{
+.title-Bar select,input,button{
   border:1px solid rgb(39,56,82);
   height:50%;
   padding:5px;
 }
 
-.titlebar input {
+.title-Bar input {
   float:left;
 }
 
@@ -85,7 +85,7 @@ p {
   background-color: rgb(208,208,208);
 }
 
-.contentBox {
+.feed-Area {
   display:flex;
   width:80%;
   padding:20px 0;
@@ -99,7 +99,7 @@ p {
   color:rgb(99, 98, 98);
 }
 
-.contentBox button{
+.feed-Area button{
   width:15%;
   height:35px;
   font-size: smaller;
@@ -115,13 +115,13 @@ footer {
 }
 
 @media screen and (max-width:1240px){
-  .titlebar{
+  .title-Bar{
     display:block;
   }
-  .titlebar div{
+  .title-Bar div{
     width:100%;
   }
-  .headerDiv{
+  .text-header{
     width:fit-content
   }
   .title button{
@@ -133,7 +133,7 @@ footer {
 }
 
 @media screen and (max-width:640px){
-  .contentBox{
+  .feed-Area{
     display:block;
     text-align: center;
     width:100vw;
