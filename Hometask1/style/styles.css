@@ -3,7 +3,6 @@
   margin:0;
   padding:0;
   border:none;
-  /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -11,11 +10,11 @@
   background-color: rgb(39,56,82);
 }
 
-.title-Bar button, .feed-Area button, footer {
+nav button, .feed-area button, footer {
   color:#fff;
 }
 
-.text-header, .feed-Area h2 {
+.text-header, .feed-area h2 {
   color:rgb(39,56,82);
 }
 
@@ -41,13 +40,8 @@ h6 {
   font-weight:bolder;
 }
 
-.container {
-  margin:30px;
-  margin-bottom: 0;
-}
-
-.title-Bar {
-  margin-top:10%;
+nav {
+  margin:10% 2% 0% 2%;
   display:flex;
   justify-content: space-between;
   padding-bottom:20px;
@@ -56,21 +50,21 @@ h6 {
   font-weight: bold;
 }
 
-.title-Bar div {
+nav div {
   width:20%;
 }
 
-.title-Bar select {
+nav select {
   width:80%;
 }
 
-.title-Bar select,input,button{
+nav select,input,button{
   border:1px solid rgb(39,56,82);
   height:50%;
   padding:5px;
 }
 
-.title-Bar input {
+nav input {
   float:left;
 }
 
@@ -84,26 +78,40 @@ p {
   margin:8px 0;
 }
 
+main {
+  margin:2% 3% 10% 3%;
+  margin-bottom: 0;
+  display:flex;
+}
+
+.left {
+  width:80%;
+}
+
+.right {
+  width:20%;
+  height: 100%;
+}
 .img-grey {
   width:20%;
   background-color: rgb(208,208,208);
 }
 
-.feed-Area {
+.feed-area {
   display:flex;
-  width:80%;
+  width:100%;
   padding:20px 0;
   border-bottom: 1px solid rgb(208,208,208);
   font-size: small;
 }
 
-.title {
+.feed {
   width:80%;
   margin-left: 10px;
   color:rgb(99, 98, 98);
 }
 
-.feed-Area button{
+.feed-area button{
   width:15%;
   height:20%;
   font-size: smaller;
@@ -118,29 +126,29 @@ footer {
   position:fixed;
   bottom:0;
   padding:10px;
-  height:8vh;
+  height:6%;
 }
 
 @media screen and (max-width:1240px){
-  .title-Bar{
+  nav{
     flex-direction: column;
   }
   .heading{
     order:3;
   }
-  .title-Bar div{
+  nav div{
     width:100%;
   }
   .text-header{
     width:fit-content
   }
-  .title button{
+  .feed button{
     width:max-content;
   }
 }
 
 @media screen and (max-width:640px){
-  .feed-Area{
+  .feed-area{
     display:block;
     text-align: center;
     width:100vw;
@@ -150,11 +158,11 @@ footer {
     height:150px;
     margin:auto;
   }
-  .title{
-    width:100vw;
+  .feed{
+    width:100%;
     padding:20px;
   } 
-  .title-Bar{
+  nav{
     margin-top:20%;
   }
 }
