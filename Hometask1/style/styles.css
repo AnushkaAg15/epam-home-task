@@ -110,10 +110,11 @@ p {
 
 footer {
   text-align: center;
+  width:100%;
   position:fixed;
   bottom:0;
   padding:10px;
-  height:8vhvh;
+  height:8vh;
 }
 
 @media screen and (max-width:1240px){
@@ -128,9 +129,6 @@ footer {
   }
   .title button{
     width:max-content;
-  }
-  body{
-    margin:0;
   }
 }
 
