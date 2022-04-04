@@ -80,7 +80,7 @@ p {
   margin:8px 0;
 }
 
-.grey {
+.img-grey {
   width:20%;
   background-color: rgb(208,208,208);
 }
@@ -101,7 +101,7 @@ p {
 
 .feed-Area button{
   width:15%;
-  height:35px;
+  height:20%;
   font-size: smaller;
   padding:10px;
   background-color: rgb(208,93,73);
@@ -138,7 +138,7 @@ footer {
     text-align: center;
     width:100vw;
   }
-  .grey{
+  .img-grey{
     width:150px;
     height:150px;
     margin:auto;
