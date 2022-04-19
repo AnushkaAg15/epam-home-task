@@ -22,3 +22,13 @@
 // The problem with this compose function is that it only composes two functions. 
 // Your task is to write a compose function which can compose any number of functions together.
 
+function compose() {
+  // Your solution
+  let args = arguments; 
+  return function(res) 
+  { 
+    for (let i = args.length - 1; i >= 0; i--)
+      res = args[i].call(this, res);
+    return res;
+  }
+}
