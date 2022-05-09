@@ -4,7 +4,7 @@ outerDiv.classList.add("searchDiv");
 document.body.appendChild(outerDiv);
 
 const img = document.createElement("img");
-img.src="youtube.gif";
+img.src="assets/youtube.gif";
 outerDiv.appendChild(img);
 
 const searchDiv = document.createElement("div");
