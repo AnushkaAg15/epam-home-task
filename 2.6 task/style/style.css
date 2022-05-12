@@ -67,8 +67,12 @@ input{
   background-color:rgb(255,0,0);
 }
 
-#paginationDiv button:hover {
+#paginationDiv button:hover:enabled {
   background-color: rgb(199, 5, 5);
+}
+
+#paginationDiv button:disabled {
+  background-color: rgb(224, 106, 106);
 }
 
 #listingTable{

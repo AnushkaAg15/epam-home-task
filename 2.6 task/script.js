@@ -145,8 +145,16 @@ function testPagination(data_obj) {
       console.log(listing_table.appendChild(list_elements[i]));
     }
     page_span.innerHTML = `${page}/${jsp_num_pages()}`;
-    btn_prev.style.display = (page === 1) ? 'none' : 'inline-flex';
-    btn_next.style.display = (page === jsp_num_pages()) ? 'none' : 'inline-flex';
+    // btn_prev.style.display = (page === 1) ? 'none' : 'inline-flex';
+    // btn_next.style.display = (page === jsp_num_pages()) ? 'none' : 'inline-flex';
+
+    btn_prev.disabled = (page === 1) ? true : false;
+    btn_next.disabled = (page === jsp_num_pages()) ? true : false;
+
+    if(btn_prev.disabled === true){
+      
+    }
+    
   }
   btn_prev.addEventListener('click', (e) => {
     e.preventDefault();
