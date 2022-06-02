@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  border:0;
+  font-size: medium;
+  font-family: sans-serif;
+}
+
+.searchDiv{
+  width:100%;
+  background-color:black;
+  display:flex;
+  align-items: center;
+  padding:1%;
+}
+
+.searchDiv img{
+  width:10%;
+  height:8%;
+  margin: 0 !important;
+}
+
+.inputDiv{
+  width:90%;
+  text-align: center;
+  padding:1%;
+  font-size:2em;
+}
+
+input{
+  height:10%;
+  width:40%;
+  padding:1%;
+}
+
+.searchDiv button{
+  height:10%;
+  width:10%;
+  margin:0 .5%;
+  background-color:rgb(255,0,0);
+  color:aliceblue;
+  font-weight: bold;
+  padding:1%;
+  /* border-radius: 5%; */
+}
+
+.searchDiv button:hover {
+  background-color: rgb(199, 5, 5);
+}
+/* .btn-prev-next {
+  height:rem;
+} */
+
+.page-count, .page-count span{
+  padding:1%;
+  font-size: 1.5rem;
+}
+
+
+#paginationDiv button {
+  width:5%;
+  height:50%;
+  padding:1%;
+  margin-left:1%;
+  text-align: center;
+  color:white;
+  background-color:rgb(255,0,0);
+}
+
+#paginationDiv button:hover:enabled {
+  background-color: rgb(199, 5, 5);
+}
+
+#paginationDiv button:disabled {
+  background-color: rgb(224, 106, 106);
+}
+
+#listingTable{
+  display:flex;
+  margin:1%;
+}
+
+.infoDiv{
+  width:20%;
+  display:flex;
+  flex-direction: column;
+  font-size: x-small;
+  padding:1%;
+  align-items: center;
+  text-align: center;
+  border:1px solid grey;
+}
+
+.infoDiv a,p{
+  font-size: 1.5 em;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.infoDiv img{
+  width:80%;
+}
+
+.infoDiv p,img,a{
+  margin:2% 0;
+  padding: 1%;
+}
+
+.date{
+  color:grey;
+}
+
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */
+  .inputDiv button{
+    width:fit-content;
+  }
+  #paginationDiv button {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  .searchDiv{
+    flex-direction: column;
+  }
+  .searchDiv input, button{
+    height:25px;
+  }
+  input{
+    width:90%;
+    margin:2% 0;
+  }
+  .searchDiv button{
+    width: fit-content;
+    font-size: small;
+    border-radius: 0;
+  }
+  #listingTable{
+    flex-direction: column;
+    align-items: center;
+  }
+  .infoDiv{
+    width:80%;
+  }
+}
+
+/* @media screen and (min-width: 1026px){
+  body {
+    font-size: 2 em;
+  }
+} */
