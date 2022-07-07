@@ -1,0 +1,25 @@
+.order {
+  margin:2%;
+  border:1px solid #aaa;
+}
+
+.order-detail{
+  height:50%;
+  padding:1%;
+  display:flex;
+  justify-content: space-between;
+  background-color:rgb(212, 175, 138);
+}
+
+.detail-container {
+  margin:2%;
+  display:flex;
+}
+
+.detail-book {
+  margin:0 2%;
+}
+
+.detail-book p{
+  font-size: 1em;
+}

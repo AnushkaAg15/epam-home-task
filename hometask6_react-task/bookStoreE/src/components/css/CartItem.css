@@ -1,0 +1,38 @@
+.cart-item {
+  display: flex;
+  padding:1%;
+  margin:2%;
+  border: 1px solid rgb(7, 7, 7);
+}
+
+.item-details {
+  padding-left:2%;
+  width:100%;
+}
+
+.item-btn {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.qty {
+  margin:1% 0;
+  width:50px;
+  padding:1%;
+  border-radius: 20%;
+  border:none;
+}
+
+.item-btn button{
+  background-color: rgb(234, 37, 37);
+  color:aliceblue;
+  border: none;
+} 
+
+.item-btn button:hover{
+  background-color: rgb(155, 7, 7);
+}
+
+
+
