@@ -1,0 +1,49 @@
+.navbar {
+  display:flex;
+  justify-content:flex-end;
+  padding:1%;
+  background-color:#8CC0DE;
+
+}
+
+.logo{
+  margin-right:auto;
+  font-size: 2em;
+  font-family: 'Satisfy', cursive;
+}
+
+.side-items a ~ a {
+  border-left: 1px solid rgb(8, 8, 8);
+}
+
+.side-items a{
+  padding:0 10px;
+  text-decoration: none;
+  color:black;
+}
+
+.side-items {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-items a:hover{
+  color:#FAF0D7;
+}
+
+.side-items a::selection {
+  color:#FAF0D7;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+    margin:2%;
+  }
+}

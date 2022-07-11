@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  background-color: #8CC0DE;
+}
+
+button:hover {
+  background-color: #F4BFBF;
+  color:white;
+}
+
+body{
+  background-color: #FAF0D7;
+ 
+}

@@ -1,0 +1,116 @@
+.cart-container{
+  display:flex;
+}
+
+.address{
+  margin: 1%;
+  padding:2%;
+  width:50%;
+}
+
+.form-group {
+  padding:2%;
+  margin: 2% 0;
+  border:1px solid rgb(5, 5, 5);
+}
+
+.form-control {
+  margin: 5px 5px;
+  height: 30px;
+  border:none;
+  padding:1%;
+}
+
+#inputStreet {
+  width: 90%;
+}
+
+#inputCity {
+  width: 50%;
+}
+
+#inputState {
+  width: 40%;
+}
+
+#inputZip {
+  width: 35%;
+}
+
+#inputCounty {
+  width: 60%;
+}
+
+#inputCountry {
+  width: 90%;
+}
+
+.address button {
+  padding:2%;
+  margin:3% 3% 2% 0;
+}
+
+.bag{
+  margin: 1%;
+  padding:2%;
+  width:50%;
+}
+
+.bag table{
+  width:80%;
+  margin:2%;
+  padding:1%;
+}
+
+.bag button {
+  padding:1%;
+  margin:1% 1% 1% 0;
+}
+
+.cartItems {
+  width:80%;
+  margin:2%;
+}
+
+.cart-container button {
+  border: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .cart-container {
+    flex-direction: column-reverse;
+  }
+
+  .address{
+    width:100%;
+  }
+
+  .bag {
+    width:100%;
+  }
+
+  .cartItems {
+    width:100%;
+  }
+
+  .bag table {
+    width:100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width:768px)  {
+  .cart-container {
+    flex-direction: column-reverse;
+  }
+  .adrdress {
+    width:80%;
+  }
+  .bag {
+    width:100%;
+  }
+  .cartItems {
+    width:100%;
+  }
+}
