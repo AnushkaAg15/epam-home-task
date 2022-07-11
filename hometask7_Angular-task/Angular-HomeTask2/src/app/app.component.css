@@ -1,0 +1,16 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+  ul li .active{
+    font-weight: 750;
+  }
+
+  li{
+    list-style: none;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .nav{
+    border-bottom: 0.05rem solid grey;
+  }

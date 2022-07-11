@@ -1,0 +1,35 @@
+.border-success .border-danger{
+    left: 5%;
+    margin-top: 10px;
+}
+
+#users{
+    display: flex;
+    justify-content: space-around;
+}
+
+.users{
+    width: 40%;
+}
+
+app-user-details{
+    width: 45%;
+}
+
+.card{
+    margin: 20px;
+}
+
+h4{
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    width: 110px; 
+    margin:  0px 10px 10px 0px ;
+    align-self:flex-end;
+}

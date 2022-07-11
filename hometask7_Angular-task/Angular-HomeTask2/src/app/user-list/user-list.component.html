@@ -1,0 +1,16 @@
+<div id="users">
+    <div class="users">
+        <li *ngFor="let user of users">
+            <div [className]="user.isDeleted?'card border-danger':'card border-success'">
+                <h4>{{user.firstName}} {{user.lastName}}</h4>
+
+                <button type="button" class="btn btn-primary" [class.selected]="user === selectedUser"
+                    (click)="onSelect(user)">Details</button>
+
+            </div>
+        </li>
+    </div>
+
+    <app-user-details [user]="selectedUser"></app-user-details>
+</div>
+

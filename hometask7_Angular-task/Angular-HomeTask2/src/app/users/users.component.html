@@ -1,0 +1,26 @@
+<div id="users">
+    <div class="users">
+        <div *ngIf="deleted">
+            <li *ngFor="let user of users">
+                <div [className]="user.isDeleted?'card border-danger':'card border-success'" *ngIf="user.isDeleted">
+                    <h4>{{user.firstName}} {{user.lastName}}</h4>
+
+                    <button type="button" [className]="user.isDeleted?'btn btn-success':'btn btn-danger'"
+                        (click)="onSelect(user)" *ngIf="user.isDeleted">Activate</button>
+
+                </div>
+            </li>
+        </div>
+        <div *ngIf="!deleted">
+            <li *ngFor="let user of users">
+                <div [className]="user.isDeleted?'card border-danger':'card border-success'" *ngIf="!user.isDeleted">
+                    <h4>{{user.firstName}} {{user.lastName}}</h4>
+
+                    <button type="button" [className]="user.isDeleted?'btn btn-success':'btn btn-danger'"
+                        (click)="onSelect(user)" *ngIf="!user.isDeleted">Deactivate</button>
+                </div>
+            </li>
+        </div>
+    </div>
+</div>
+

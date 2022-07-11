@@ -1,0 +1,30 @@
+
+<div *ngIf="user">
+    <div class="card bg-light detail">
+        <div style="padding: 15px;">
+            <h4>{{user.firstName}} {{user.lastName}}</h4>
+            <h6 [style.color]="getCssValue()?'red':'green'" *ngIf="!user.isDeleted">Active</h6>
+            <h6 [style.color]="getCssValue()?'red':'green'" *ngIf="user.isDeleted">Deleted</h6>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Login Id</td>
+                        <td>{{user.id}}</td>
+                    </tr>
+                    <tr>
+                        <td>FirstName</td>
+                        <td>{{user.firstName}}</td>
+                    </tr>
+                    <tr>
+                        <td>LastName</td>
+                        <td>{{user.lastName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>{{user.age}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
