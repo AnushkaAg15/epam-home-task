@@ -1,0 +1,79 @@
+button {
+    background-color: rgb(1, 26, 53);
+    width: 45px;
+    border: none;
+    padding: 0px;
+    font-size: xx-small;
+    height: 20px;
+    color: white;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  
+  main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  /* header 2 styles */
+  .header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  label {
+    font-size: x-small;
+    font-weight: 900;
+  }
+  
+  #headerCategory {
+    width: 150px;
+  }
+  
+  input {
+    width: 100px;
+  }
+  
+  /* contents */
+  
+  .news {
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  /* content boxes */
+  .box {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 15px;
+    background-color: grey;
+    background: linear-gradient(rgb(128, 128, 128), rgb(128, 148, 168));
+    border: 1px solid black;
+    /* max-width: 30%; */
+  }
+  
+  .content {
+    padding: 12px;
+    width: 75%;
+  }
+  
+  /* continue buttons style */
+  #continue {
+    background-color: rgb(236, 135, 41);
+    color: white;
+    width: 100px;
+    border: none;
+  }

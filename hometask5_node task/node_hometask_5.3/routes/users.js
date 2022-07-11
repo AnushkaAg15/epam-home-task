@@ -8,7 +8,7 @@ router.get("/",getAllUsers);
 router.get("/",getAutoSuggestedUser);
 router.get("/:id", getUserById);
 router.post("/",validateUser,createUser);
-router.patch("/:id",updateUser);
-router.delete("/:id",deleteUser);
+router.patch("/:id",validateUser,updateUser);
+router.delete("/:id",validateUser,deleteUser);
 
 export default router;
